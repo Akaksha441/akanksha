@@ -1,0 +1,332 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#a6d353;
+color:#fcf9f9;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(8, 90, 122, 0.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+color:#38bdf8;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:100px 20px;
+background:
+linear-gradient(
+135deg,
+#0f31c9,
+#91be14,
+#d15c19
+);
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+color:#38ebf8;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-size:2rem;
+margin-bottom:20px;
+color:#6922c5;
+}
+
+.hero p{
+font-size:1.1rem;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#38bdf8;
+padding:14px 28px;
+border-radius:10px;
+text-decoration:none;
+color:#fff;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.secondary{
+background:#22c55e;
+}
+
+.social-links{
+margin-top:30px;
+}
+
+.social-links a{
+color:white;
+font-size:1.8rem;
+margin:0 12px;
+transition:0.3s;
+}
+
+.social-links a:hover{
+color:#38bdf8;
+}
+
+/* SECTION */
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#38bdf8;
+}
+
+/* ABOUT */
+
+.about-container{
+max-width:1000px;
+margin:auto;
+background:#134acc;
+padding:35px;
+border-radius:20px;
+}
+
+/* CARD */
+
+.card{
+background:#d33434;
+padding:30px;
+border-radius:20px;
+text-align:center;
+max-width:700px;
+margin:auto;
+}
+
+/* SKILLS */
+
+.skills-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.skill-card{
+background:#0f172a;
+padding:30px;
+border-radius:20px;
+transition:0.4s;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+border:1px solid #38bdf8;
+}
+
+.skill-card h3{
+color:#22c55e;
+margin-bottom:15px;
+}
+
+/* TIMELINE */
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.timeline-item{
+background:#0f172a;
+padding:30px;
+border-radius:20px;
+border-left:5px solid #38bdf8;
+}
+
+/* PROJECTS */
+
+.project-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#97034d;
+padding:30px;
+border-radius:20px;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 10px 25px rgba(56,189,248,0.3);
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+/* CERTIFICATIONS */
+
+.cert-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.cert-card{
+background:#0f172a;
+padding:25px;
+border-radius:15px;
+text-align:center;
+font-weight:600;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.achievement-card{
+background:#0f172a;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+/* CONTACT */
+
+.contact-box{
+max-width:700px;
+margin:auto;
+background:#0f172a;
+padding:35px;
+border-radius:20px;
+text-align:center;
+}
+
+.contact-box p{
+margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+text-align:center;
+padding:25px;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#38bdf8;
+border-radius:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero h2{
+font-size:1.4rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+}
